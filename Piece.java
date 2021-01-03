@@ -9,7 +9,7 @@ public enum Piece {
 	
 	private int price;
 	
-	private Piece(int price) {
+	Piece(int price) {
 		this.price = price;
 	}
 	
