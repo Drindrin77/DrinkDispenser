@@ -54,7 +54,7 @@ public class Dispenser {
 		insertedPieces.clear();
 		return changePieces;
 	}
-
+	
 	private Piece mostExpensivePieceByChange(int change) {
 
 		List<Piece> sortedMoneyPiece = Arrays.asList(Piece.values());
@@ -79,7 +79,7 @@ public class Dispenser {
 		return null;
 	}
 
-	private int sumPieces() {
+	public int sumPieces() {
 		int sum = 0;
 		for (Entry<Piece, Integer> entry : insertedPieces.entrySet()) {
 			sum += entry.getValue() * entry.getKey().moneyValue();
